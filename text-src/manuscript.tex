@@ -1,0 +1,33 @@
+\documentclass[11]{book}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{geometry}
+
+\newcommand{\plasTeX}{\textbf{plasTeX}}% define your own commands
+\newcommand{\ignore}[1]{}% comment inline text
+\renewcommand{\AA}{Angstrom}% redefine LaTeX command \AA
+\makeindex%	make an index
+
+\begin{document}
+\frontmatter
+\bibliographystyle{unsrt}
+
+\mainmatter
+\chapter{Introduction}\label{S-1}
+Here goes the Introduction \cite{citekey}. 
+Here\index{Here} goes the Introduction.\index{Introduction} 
+
+\section{Section heading}\label{S-1-1}
+Here goes the first section. It contains math $\alpha=\beta$.
+
+\subsection{Sub-section heading}
+Here goes the first sub-section. 
+
+\chapter{Bibliography}% to become sect0001.html
+\begin{thebibliography}{9}
+\bibitem{citekey} J. Doe, Bibliography entry typed directly into the .tex file
+\end{thebibliography}
+\printindex
+\end{document}

@@ -1,0 +1,35 @@
+/* scale all figures to fill the live box */
+div.figure img {
+    width: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* all captions (tables, figures) centered */
+div.caption {
+	text-align: center;
+}
+
+/* overwrite the display:block of div.figure img{} to allow math inside a caption w/o centering it */
+div.caption img {
+	display: inline;
+}
+
+/* center tables */
+table.tabular {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+/* remove the blank line inserted by the <p> and </p> above an below each cell in a table */
+div.table p {
+	margin-top: 0em; 
+	margin-bottom: 0em;
+}
+
+/* remove blank line inserted by <p> and </p> above an below each line in {bibliography} */
+dl.bibliography p {
+	margin-top: 0em; 
+	margin-bottom: 0em;
+}
